@@ -1,21 +1,12 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/spf13/hugoThemes#themetoml for an example
-
 name = "Harth Hugo Theme"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
-description = ""
-homepage = "http://siteforthistheme.com/"
-tags = ["", ""]
-features = ["", ""]
-min_version = 0.14
+licenselink = "https://github.com/harthsw/harth-hugo-theme/blob/master/LICENSE.md"
+description = "Harth Software theme for Hugo static website generator. Uses Bootstrap, suitable for company/technical/blogging."
+homepage = "https://github.com/harthsw/harth-hugo-theme"
+tags = ["company", "bootstrap", "blog", "technical"]
+features = ["company", "bootstrap", "blog", "technical"]
+min_version = 0.15
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Harvey Thompson"
+  homepage = "http://www.610yesnolovely.org/"
