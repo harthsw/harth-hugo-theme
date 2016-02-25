@@ -70,14 +70,24 @@ h1.page-title {
 .harth-sidebar {
     color: #ddd;
     background-color: #a00;
-
-    /* fixed sidebar at top, left, stretch sidebar to height of display */
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 1000;
-    display: block;
+}
+/* fixed sidebar at top, left, stretch sidebar to height of display */
+@media screen and (min-width: 768px) {
+    .harth-sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 1000;
+	display: block;
+    }
+    .harth-content {
+	margin-left: 25%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .harth-content {
+    }
 }
 .harth-sidebar a {
     color: #fff;    
