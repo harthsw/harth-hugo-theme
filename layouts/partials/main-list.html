@@ -1,5 +1,13 @@
 {{ "<!-- BEGIN partials/main-list.html -->" | safeHTML }}
 {{ partial "body-begin" . }}
-TODO: MAIN-LIST
+
+TODO: FORMAT
+
+<ul>
+  {{ range .Data.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+
 {{ partial "body-end" . }}
 {{ "<!-- END partials/main-list.html -->" | safeHTML }}
