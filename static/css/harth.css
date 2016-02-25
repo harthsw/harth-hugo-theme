@@ -36,7 +36,7 @@ h1.page-title {
 
 /* Global topbar */
 .harth-topbar-global {
-    background-color: #a00;
+    background-color: #990d0d;
     color: #ddd;
 }
 .harth-row-global {
@@ -44,7 +44,7 @@ h1.page-title {
 
 /* Local topbar */
 .harth-topbar-local {
-    background-color: #a00;
+    background-color: #990d0d;
     color: #ddd;    
 }
 .harth-row-local {
@@ -69,7 +69,7 @@ h1.page-title {
 }
 .harth-sidebar {
     color: #ddd;
-    background-color: #a00;
+    background-color: #990d0d;
 }
 /* fixed sidebar at top, left, stretch sidebar to height of display */
 @media screen and (min-width: 768px) {
