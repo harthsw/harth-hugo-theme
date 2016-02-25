@@ -108,3 +108,64 @@ h1,h2,h3,h4,h5 {
     color: #c00;
 }
 
+/* Labels */
+.harth-label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+a.harth-label:hover,
+a.harth-label:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.harth-label:empty {
+    display: none;
+}
+
+.harth-post-title,
+.harth-post-title a {
+    color: #303030;
+}
+.harth-post-title {
+    margin-top: 0;
+}
+
+.harth-post-date {
+    display: block;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
+}
+
+.harth-posts {
+    list-style: none;
+}
+
+.harth-posts li {
+    margin: 0 0 .5em 0;
+}
+
+.harth-label {
+    margin: 0 .25em;
+    background-color: #313131;
+}
+
+.harth-posts a.harth-label,
+.harth-post-date a.harth-label {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.harth-post a {
+    color: #c00;
+}
