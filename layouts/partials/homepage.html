@@ -1,0 +1,8 @@
+<body>
+  PARTIAL: HOMEPAGE
+  {{ range .Data.Pages }}
+    {{ if eq .Type "index" }}
+      {{ .Content }}
+    {{ end }}
+  {{ end }}
+</body>
