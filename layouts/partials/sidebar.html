@@ -1,4 +1,8 @@
 {{ "<!-- BEGIN partials/sidebar.html -->" | safeHTML }}
-<h1>Sidebar</h1>
-{{ partial "sidebar-nav.html" . }}
+<div class="col-md-3">
+  <div class="sidebar-nav-fixed affix">
+    <h1>Sidebar</h1>
+    {{ partial "sidebar-nav.html" . }}
+  </div>    
+</div>
 {{ "<!-- END partials/sidebar.html -->" | safeHTML }}

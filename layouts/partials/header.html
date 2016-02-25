@@ -9,8 +9,6 @@
   <body>
     <div class="container">    
       <div class="row">
-	<div class="col-md-3">
-	  {{ partial "sidebar.html" . }}
-	</div>
+	{{ partial "sidebar.html" . }}
 	<div class="col-md-9">
 {{ "<!-- END partials/header.html -->" | safeHTML }}
