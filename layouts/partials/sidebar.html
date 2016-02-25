@@ -1,17 +1,8 @@
 {{ "<!-- BEGIN partials/sidebar.html -->" | safeHTML }}
-<div class="col-md-3" style="border: 1px solid #000;">
-  <!-- TODO: Bootstrap simple collapsable sidebar -->
-  <!-- http://startbootstrap.com/template-overviews/simple-sidebar/ -->
-  <!-- http://www.bootply.com/101543 -->
-  <div style="border: 1px solid #000;">
-    <h1>Sidebar</h1>
-    <div style="border: 1px solid #000;">
-      <h2>Sidebar Top</h2>
-    </div>
+<div id="wrapper">
+  <div id="sidebar-wrapper">
     {{ partial "sidebar-nav.html" . }}
-    <div style="border: 1px solid #000;">
-      <h2>Sidebar Bottom</h2>
-    </div>
   </div>
 </div>
+<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
 {{ "<!-- END partials/sidebar.html -->" | safeHTML }}
