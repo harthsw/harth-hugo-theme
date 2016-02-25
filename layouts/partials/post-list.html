@@ -1,0 +1,7 @@
+{{ "<!-- BEGIN partials/post-list.html -->" | safeHTML }}
+<body>
+  {{ range .Data.Pages }}
+    <h1>{{ .Title }}</h1>
+  {{ end }}
+</body>
+{{ "<!-- END partials/post-list.html -->" | safeHTML }}
