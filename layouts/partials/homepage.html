@@ -1,9 +1,7 @@
 {{ "<!-- BEGIN partials/homepage.html -->" | safeHTML }}
-<body>
-  {{ range .Data.Pages }}
-    {{ if eq .Type "index" }}
-      {{ .Content }}
-    {{ end }}
+{{ range .Data.Pages }}
+  {{ if eq .Type "index" }}
+    {{ .Content }}
   {{ end }}
-</body>
+{{ end }}
 {{ "<!-- END partials/homepage.html -->" | safeHTML }}

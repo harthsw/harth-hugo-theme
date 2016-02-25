@@ -1,3 +1,3 @@
 {{ partial "header.html" . }}
-{{ partial "main-single.html" . }}
+{{ partial "homepage.html" . }}
 {{ partial "footer.html" . }}

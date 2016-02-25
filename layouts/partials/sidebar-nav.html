@@ -1,0 +1,8 @@
+{{ "<!-- BEGIN partials/sidebar-nav.html -->" | safeHTML }}
+<h2>Sidebar Nav</h2>
+<ul>
+  {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+  {{ end }}
+</ul>  
+{{ "<!-- END partials/sidebar-nav.html -->" | safeHTML }}

@@ -2,11 +2,10 @@
 {{ "<!-- BEGIN partials/header.html -->" | safeHTML }}
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>{{ .Title }}{{ if ne .Title .Site.Title }} &middot; {{ .Site.Title }}{{ end }}</title>    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <meta name="author" content="{{ .Site.Params.author }}">
-    {{ .Hugo.Generator }}
+{{ partial "header-device.html" . }}    
+{{ partial "header-page.html" . }}
+{{ partial "header-bootstrap.html" . }}
   </head>
+  <body>
+    {{ partial "sidebar.html" . }}
 {{ "<!-- END partials/header.html -->" | safeHTML }}
