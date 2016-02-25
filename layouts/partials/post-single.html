@@ -1,4 +1,6 @@
 {{ "<!-- BEGIN partials/post-single.html -->" | safeHTML }}
-<h1 class="page-header">{{ .Title }}</h1>
-{{ .Content }}
+    <div class="page-header">
+      <h1 class="page-title">{{ .Title }}</h1>
+    </div>
+    {{ .Content }}
 {{ "<!-- END partials/post-single.html -->" | safeHTML }}

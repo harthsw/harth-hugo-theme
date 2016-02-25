@@ -7,5 +7,10 @@
 {{ partial "header-bootstrap.html" . }}
   </head>
   <body>
-    {{ partial "sidebar.html" . }}
+    <div class="container">    
+      <div class="row">
+	<div class="col-md-3">
+	  {{ partial "sidebar.html" . }}
+	</div>
+	<div class="col-md-9">
 {{ "<!-- END partials/header.html -->" | safeHTML }}

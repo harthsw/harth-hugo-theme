@@ -1,5 +1,8 @@
-<!-- Harth overrides -->
-.page-header {
+/* H1 Page Title has larger font */
+h1.page-title {
     font-size: 300%;
-    border-bottom: 1px solid #aaa
+}
+/* Page header has darker dividing line */
+.page-header {
+    border-bottom: 1px solid #aaa;
 }
