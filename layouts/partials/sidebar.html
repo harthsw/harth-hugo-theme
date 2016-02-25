@@ -1,5 +1,13 @@
 {{ "<!-- BEGIN partials/sidebar.html -->" | safeHTML }}
 <div class="col-sm-3 debug-border-blue harth-sidebar">
+  <div class="harth-sidebar-top">
+    <div class="harth-site-title">
+      {{ .Site.Params.title_html | safeHTML }}
+    </div>
+    <div class="harth-site-author">
+      By {{ .Site.Params.author }}    
+    </div>
+  </div>
   {{ partial "sidebar-nav.html" . }}
 </div>
 

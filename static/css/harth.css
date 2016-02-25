@@ -2,9 +2,12 @@
 h1.page-title {
     font-size: 300%;
 }
-/* Page header has darker dividing line */
+/* Page header has darker thicker dividing line */
 .page-header {
-    border-bottom: 1px solid #aaa;
+    border-bottom: 2px solid #000;
+}
+.page-header h1 {
+    border-bottom: 0px;
 }
 
 .debug-border-red {
@@ -33,7 +36,7 @@ h1.page-title {
 
 /* Global topbar */
 .harth-topbar-global {
-    background-color: #600;
+    background-color: #a00;
     color: #ddd;
 }
 .harth-row-global {
@@ -41,7 +44,7 @@ h1.page-title {
 
 /* Local topbar */
 .harth-topbar-local {
-    background-color: #800;
+    background-color: #a00;
     color: #ddd;    
 }
 .harth-row-local {
@@ -49,14 +52,32 @@ h1.page-title {
 
 /* Mid row (sidebar and content) */
 .harth-row-mid {
-    background-color: #a00;
-    height: 100%;
-    float: none;
 }
 
 /* Sidebar */
+.harth-sidebar-top {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.harth-site-title {
+    color: #fff;
+    font-size: 200%;
+}
+.harth-site-author {
+    color: #ddd;
+    font-size: 110%;
+}
 .harth-sidebar {
     color: #ddd;
+    background-color: #a00;
+
+    /* fixed sidebar at top, left, stretch sidebar to height of display */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
 }
 .harth-sidebar a {
     color: #fff;    
@@ -67,5 +88,13 @@ h1.page-title {
 
 /* Content */
 .harth-content {
-    background-color: #fff;
 }
+
+/* Headings are coloured red, h1 has underline */
+h1 {
+    border-bottom: 1px solid #ccc;
+}
+h1,h2,h3,h4,h5 {
+    color: #c00;
+}
+
