@@ -1,0 +1,9 @@
+{{ "<!-- BEGIN partials/body-begin.html -->" | safeHTML }}
+<body>
+  <div class="container-fluid debug-border-red">
+    {{ partial "topbar-global.html" . }}
+    {{ partial "topbar-local.html" . }}
+    <div class="row debug-border-green harth-row-mid">
+      {{ partial "sidebar.html" . }}
+      <div class="col-sm-9 debug-border-blue harth-content">
+{{ "<!-- END partials/body-begin.html -->" | safeHTML }}

@@ -1,6 +1,10 @@
 {{ "<!-- BEGIN partials/post-single.html -->" | safeHTML }}
-    <div class="page-header">
-      <h1 class="page-title">{{ .Title }}</h1>
-    </div>
-    {{ .Content }}
+{{ partial "body-begin.html" . }}
+
+<div class="page-header">
+  <h1 class="page-title">{{ .Title }}</h1>
+</div>
+{{ .Content }}
+
+{{ partial "body-end.html" . }}    
 {{ "<!-- END partials/post-single.html -->" | safeHTML }}

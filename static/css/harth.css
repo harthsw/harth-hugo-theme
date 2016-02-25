@@ -6,3 +6,66 @@ h1.page-title {
 .page-header {
     border-bottom: 1px solid #aaa;
 }
+
+.debug-border-red {
+/*
+    border: 1px solid #f00;
+*/
+}
+
+.debug-border-green {
+/*
+    border: 1px solid #0f0;
+*/
+}
+
+.debug-border-blue {
+/*
+    border: 1px solid #00f;
+*/
+}
+
+.debug-border-black {
+/*
+    border: 1px solid #000;
+*/
+}
+
+/* Global topbar */
+.harth-topbar-global {
+    background-color: #600;
+    color: #ddd;
+}
+.harth-row-global {
+}
+
+/* Local topbar */
+.harth-topbar-local {
+    background-color: #800;
+    color: #ddd;    
+}
+.harth-row-local {
+}
+
+/* Mid row (sidebar and content) */
+.harth-row-mid {
+    background-color: #a00;
+    height: 100%;
+    float: none;
+}
+
+/* Sidebar */
+.harth-sidebar {
+    color: #ddd;
+}
+.harth-sidebar a {
+    color: #fff;    
+}
+.harth-sidebar li {
+    color: #aaa;
+}
+
+/* Content */
+.harth-content {
+    background-color: #fff;
+}

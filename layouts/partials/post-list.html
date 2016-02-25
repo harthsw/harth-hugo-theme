@@ -1,7 +1,14 @@
 {{ "<!-- BEGIN partials/post-list.html -->" | safeHTML }}
-<h1>Post List</h1>
-<p>TODO: Implement</p>
+{{ partial "body-begin.html" . }}
+
+<div class="page-header">
+  <h1 class="page-title">Post List</h1>
+</div>
+
 {{ range .Data.Pages }}
   <a href="{{ .Permalink }}">{{ .Title }}</a>
+  <p>Text</p>
 {{ end }}
+
+{{ partial "body-end.html" . }}
 {{ "<!-- END partials/post-list.html -->" | safeHTML }}

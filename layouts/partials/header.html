@@ -2,17 +2,8 @@
 {{ "<!-- BEGIN partials/header.html -->" | safeHTML }}
 <html>
   <head>
-{{ partial "header-device.html" . }}    
-{{ partial "header-page.html" . }}
-{{ partial "header-bootstrap.html" . }}
+    {{ partial "header-device.html" . }}    
+    {{ partial "header-page.html" . }}
+    {{ partial "header-bootstrap.html" . }}
   </head>
-  <body>
-    <div class="container-fluid" style="border: 1px solid #0f0;">
-      {{ partial "topbar-global.html" . }}
-      {{ partial "topbar-local.html" . }}
-      {{ partial "sidebar.html" . }}
-      <div id="page-content-wrapper">
-	<div class="container-fluid">
-	  <div class="row">
-	    <div class="col-lg-12" style="border: 1px solid #f00;">
 {{ "<!-- END partials/header.html -->" | safeHTML }}

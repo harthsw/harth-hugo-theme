@@ -1,8 +1,6 @@
 {{ "<!-- BEGIN partials/sidebar.html -->" | safeHTML }}
-<div id="wrapper">
-  <div id="sidebar-wrapper">
-    {{ partial "sidebar-nav.html" . }}
-  </div>
+<div class="col-sm-3 debug-border-blue harth-sidebar">
+  {{ partial "sidebar-nav.html" . }}
 </div>
-<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+
 {{ "<!-- END partials/sidebar.html -->" | safeHTML }}
