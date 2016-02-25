@@ -7,8 +7,14 @@
 {{ partial "header-bootstrap.html" . }}
   </head>
   <body>
-    <div class="container">    
+    <div class="container" style="border: 1px solid #0f0;">
+      {{ partial "topbar-global.html" . }}
+    </div>
+    <div class="container" style="border: 1px solid #0f0;">
+      {{ partial "topbar-local.html" . }}
+    </div>
+    <div class="container" style="border: 1px solid #0f0;">
       <div class="row">
 	{{ partial "sidebar.html" . }}
-	<div class="col-md-9">
+	<div class="col-md-9" style="border: 1px solid #f00;">
 {{ "<!-- END partials/header.html -->" | safeHTML }}
