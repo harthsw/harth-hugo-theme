@@ -1,6 +1,5 @@
 {{ "<!-- BEGIN partials/homepage.html -->" | safeHTML }}
 <body>
-  PARTIAL: HOMEPAGE
   {{ range .Data.Pages }}
     {{ if eq .Type "index" }}
       {{ .Content }}

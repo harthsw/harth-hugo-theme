@@ -1,7 +1,9 @@
 {{ "<!-- BEGIN partials/post-list.html -->" | safeHTML }}
 <body>
+  <h1>Post List</h1>
+  <p>TODO: Implement</p>
   {{ range .Data.Pages }}
-    <h1>{{ .Title }}</h1>
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
   {{ end }}
 </body>
 {{ "<!-- END partials/post-list.html -->" | safeHTML }}
