@@ -1,9 +1,12 @@
 {{ "<!-- BEGIN partials/homepage.html -->" | safeHTML }}
 {{ partial "body-begin.html" . }}
+
 {{ range .Data.Pages }}
   {{ if eq .Type "index" }}
     {{ .Content }}
   {{ end }}
 {{ end }}
+
+{{ partial "disqus-comment.html" . }}
 {{ partial "body-end.html" . }}
 {{ "<!-- END partials/homepage.html -->" | safeHTML }}

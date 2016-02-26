@@ -6,5 +6,6 @@
 </div>
 {{ .Content }}
 
+{{ partial "disqus-comment.html" . }}
 {{ partial "body-end.html" . }}    
 {{ "<!-- END partials/post-single.html -->" | safeHTML }}

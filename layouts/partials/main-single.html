@@ -1,8 +1,11 @@
 {{ "<!-- BEGIN partials/main-single.html -->" | safeHTML }}
 {{ partial "body-begin" . }}
+
 <div class="page-header">
   <h1 class="page-title">{{ .Title }}</h1>
 </div>
 {{ .Content }}
+
+{{ partial "disqus-comment.html" . }}
 {{ partial "body-end" . }}
 {{ "<!-- END partials/main-single.html -->" | safeHTML }}

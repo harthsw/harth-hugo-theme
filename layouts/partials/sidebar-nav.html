@@ -1,8 +1,8 @@
 {{ "<!-- BEGIN partials/sidebar-nav.html -->" | safeHTML }}
-  <!-- http://startbootstrap.com/template-overviews/sb-admin-2/ -->
-  <ul>
-    {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-    {{ end }}
-  </ul>
+<!-- http://startbootstrap.com/template-overviews/sb-admin-2/ -->
+<ul>
+  {{ range .Site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+  {{ end }}
+</ul>
 {{ "<!-- END partials/sidebar-nav.html -->" | safeHTML }}
