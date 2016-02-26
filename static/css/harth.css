@@ -169,3 +169,9 @@ a.harth-label:focus {
 .harth-post a {
     color: #c00;
 }
+
+.harth-comment {
+    margin-top: 5em;
+    margin-bottom: 0em;
+    border-top: 2px solid #000;
+}
