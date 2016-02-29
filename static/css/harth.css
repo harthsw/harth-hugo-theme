@@ -175,3 +175,87 @@ a.harth-label:focus {
     margin-bottom: 0em;
     border-top: 2px solid #000;
 }
+
+/* Keyboard input */
+.harth-key {
+    padding: 2px 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #777;
+    font-size: 90%;
+    color: #000;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 -2px 0 #ccc;
+    box-shadow: inset 0 -2px 0 #ccc;
+    font-family: "Arial", "Helvetica", "sans-serif";
+    font-size: 1em;
+}
+
+/* Console output */
+.harth-console-panel {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;    
+    margin: 0px;
+}
+.harth-console {
+    padding: 8px;
+    margin: 0;
+    line-height: 1.2;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #333;
+    border-radius: 3px;    
+    background-color: #444;
+    color: #0c0;
+    font-family: "Inconsolata", "monospace";
+    font-size: 1em;
+}
+
+/* Highlighted code output */
+.harth-code-panel {
+    display: block;    
+    padding-top: 1em;
+    padding-bottom: 1em;    
+    margin: 0px;
+}
+.harth-code-panel-inner {
+    display: block;    
+    padding-top: 0;
+    padding-bottom: 0;    
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.harth-code-panel-heading {
+    border: 5px solid #0;
+    border-radius: 0;    
+    margin: 0;
+    padding: 0;
+}
+.harth-code-panel-body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #00f;
+    border-style: solid;
+    border-color: #00f;
+}    
+.harth-code-pre {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.harth-code:first-line {
+    line-height: 0;
+}
+.harth-code {
+    padding: 8px;
+    margin: 0;
+    line-height: 1.2;    
+    border-style: solid;
+    border-width: 4px;
+    border-color: #333;
+    font-size: 1em;
+}

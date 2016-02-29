@@ -12,7 +12,7 @@ help:
 	@echo "Available targets:\n\
 \n\
 bootstrap-update	update bootstrap from download\n\
-sidebar-update		update bootstrap from download\n\
+sidebar-update		update sidebar from download\n\
 clean			clean temporary files\n\
 " >&2 \
 

@@ -1,0 +1,14 @@
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      {{ if .IsNamedParams }}
+        {{ if .Get "title"}}{{ .Get "title" }}{{ else }}TODO{{ end }}
+      {{ else }}
+        TODO
+      {{ end }}
+    </h3>
+  </div>
+  <div class="panel-body">
+    {{ .Inner }}
+  </div>
+</div>

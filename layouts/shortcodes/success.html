@@ -1,0 +1,22 @@
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      {{ if .IsNamedParams }}
+        {{ if .Get "title"}}{{ .Get "title" }}{{ else }}Success{{ end }}
+      {{ else }}
+        Success
+      {{ end }}
+    </h3>
+  </div>
+  {{ if .IsNamedParams }}
+    {{ if .Get "body"}}
+      <div class="panel-body">
+	{{ .Get "body" }}
+      </div>
+    {{ end }}
+  {{ else }}
+    <div class="panel-body">
+      {{ .Get 0 }}
+    </div>
+  {{ end }}
+</div>

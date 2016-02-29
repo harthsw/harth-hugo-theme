@@ -1,0 +1,11 @@
+{{ range $index, $element := .Params }}
+  {{ if gt $index 0 }}
+  +
+  {{ end }}
+  {{ if eq $element "Cmd" }}
+    <span class="harth-key">&#8984</span>
+  {{ else }}
+    <span class="harth-key">{{ $element }}</span>
+  {{ end }}
+    
+{{ end }}
