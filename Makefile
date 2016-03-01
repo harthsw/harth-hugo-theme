@@ -6,6 +6,9 @@ SIDEBAR_VERSION		= 1.0.5
 SIDEBAR_URL		= https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/archive/v$(SIDEBAR_VERSION).zip
 SIDEBAR_UNZIP_DIR	= static/startbootstrap-simple-sidebar-$(SIDEBAR_VERSION)
 
+SOLARIZED_URL		= https://gist.githubusercontent.com/nicolashery/5765395/raw/80abaa1791271466393e8264f286c1eb9240d059/solarized-dark.css
+SOLARIZED_OUTPUT	= static/css/pygment-solarized-dark.css
+
 .DEFAULT: help
 
 help:
@@ -13,6 +16,7 @@ help:
 \n\
 bootstrap-update	update bootstrap from download\n\
 sidebar-update		update sidebar from download\n\
+solarized-update	update pygments solarized css theme\n\
 clean			clean temporary files\n\
 " >&2 \
 
@@ -36,6 +40,9 @@ sidebar-update:
 	    unzip -d static static/sidebar-dist.zip;	\
 	fi
 	cp -a $(SIDEBAR_UNZIP_DIR)/css static
+
+solarized-update:
+	curl --progress-bar -L --url $(SOLARIZED_URL) --output $(SOLARIZED_OUTPUT)
 
 clean:
 	rm -f static/bootstrap-dist.zip

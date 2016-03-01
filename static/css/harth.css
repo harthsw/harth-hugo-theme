@@ -214,6 +214,26 @@ a.harth-label:focus {
 }
 
 /* Highlighted code output */
+div.highlight {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+pre {
+    padding: 1em;
+    margin: 0em;
+    line-height: 1.2;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3px;
+    border-color: #333;
+    background-color: inherit;
+    color: inherit;    
+    font-family: "Inconsolata", "monospace";
+    font-size: 1em;
+}
+<!-- Highlight using Javascript -->
+/*
 .harth-code-panel {
     display: block;    
     padding-top: 1em;
@@ -265,3 +285,4 @@ a.harth-label:focus {
     border-radius: 0;
     font-size: 1em;
 }
+*/
