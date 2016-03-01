@@ -67,6 +67,13 @@ h1.page-title {
     color: #ddd;
     font-size: 110%;
 }
+.harth-sidebar-nav {
+}
+.harth-sidebar-bot {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
 .harth-sidebar {
     color: #ddd;
     background-color: #990d0d;
