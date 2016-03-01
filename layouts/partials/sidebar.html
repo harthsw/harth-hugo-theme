@@ -6,11 +6,15 @@
       {{ .Site.Params.title_html | safeHTML }}
     </div>
     <div class="harth-site-author">
-      By {{ .Site.Params.author }}    
+      By <a href="{{ .Site.Params.author_url }}">{{ .Site.Params.author }}</a>
     </div>
   </div>
-  {{ partial "sidebar-nav.html" . }}
-  {{ partial "sidebar-bot.html" . }}
+  <div class="harth-sidebar-nav">
+    {{ partial "sidebar-nav.html" . }}
+  </div>
+  <div class="harth-sidebar-bot">
+    {{ partial "sidebar-bot.html" . }}
+  </div>
 </div>
 
 {{ "<!-- END partials/sidebar.html -->" | safeHTML }}
