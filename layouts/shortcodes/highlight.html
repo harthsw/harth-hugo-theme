@@ -1,8 +1,32 @@
-{{ $language := .Get 0 }}
+<!-- 
+  This is totally ridiculous, what happened to sensible familiar programming?
+  I therefore declare Go/Hugo templates extremely silly; this took me four
+  hours of painstaking research and googling. It's so non-obvious I
+  dare you to remember without looking.
+
+  In other languages you'd just refer to the flipping function
+  arguments by name. Ie. "language" is the language argument.
+
+  func highlight(string title, string language)
+  {
+     callFunc(title);
+  } 
+  
+-->
+{{ if .IsNamedParams }}
+  {{ .Get "language" | $.Scratch.Add "language" }}
+  {{ .Get "title" | $.Scratch.Add "title" }}
+{{ else }}
+  {{ .Get 0 | $.Scratch.Add "language" }}
+  {{ .Get 1 | $.Scratch.Add "title" }}
+{{ end }}
+{{ $language := $.Scratch.Get "language" }}
+{{ $title := $.Scratch.Get "title" }}
+<!-- End of Go/Hugo Template stupidity -->
 <div class="harth-code-panel">
-  <div class="panel panel-default harth-code-panel-inner">
+  <div class="panel harth-code-panel-inner">
     <div class="panel-heading harth-code-panel-heading">
-      {{ $language }}
+      {{ $title | title }}
     </div>
     <div class="panel-body harth-code-panel-body">
       <pre class="harth-code-pre"><code class="language-{{ $language }} harth-code">{{ .Inner | chomp }}</code></pre>

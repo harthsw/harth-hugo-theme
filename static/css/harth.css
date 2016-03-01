@@ -218,34 +218,39 @@ a.harth-label:focus {
     display: block;    
     padding-top: 1em;
     padding-bottom: 1em;    
-    margin: 0px;
+    margin: 0;
+    border: 0;
 }
 .harth-code-panel-inner {
     display: block;    
     padding-top: 0;
     padding-bottom: 0;    
     margin: 0;
-    border: 1px solid #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
     border-radius: 5px;
 }
 .harth-code-panel-heading {
-    border: 5px solid #0;
-    border-radius: 0;    
-    margin: 0;
-    padding: 0;
+    padding-left: 11px;        
+    padding-top: 3px;
+    padding-bottom: 3px;    
+    margin:  3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    background-color: #fff;
 }
 .harth-code-panel-body {
-    margin: 0;
-    border: 0;
     padding: 0;
-    background-color: #00f;
-    border-style: solid;
-    border-color: #00f;
+    margin: 3px;
+    border-width: 0;    
 }    
 .harth-code-pre {
     padding: 0;
     border: 0;
     margin: 0;
+    border-radius: 0;
 }
 .harth-code:first-line {
     line-height: 0;
@@ -253,9 +258,10 @@ a.harth-label:focus {
 .harth-code {
     padding: 8px;
     margin: 0;
-    line-height: 1.2;    
+    line-height: 1.2;
     border-style: solid;
     border-width: 4px;
-    border-color: #333;
+    border-color: #000;
+    border-radius: 0;
     font-size: 1em;
 }
