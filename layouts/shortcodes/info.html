@@ -8,11 +8,15 @@
       {{ end }}
     </h3>
   </div>
-  <div class="panel-body">  
-    {{ if .IsNamedParams }}
-      {{ if .Get "body" }}{{ .Get "body" }}{{ else }}{{ .Inner }}{{ end }}
-    {{ else }}
-      {{ if .Get 0 }}{{ .Get 0 }}{{ else }}{{ .Inner }}{{ end }}
+  {{ if .IsNamedParams }}
+    {{ if .Get "body"}}
+      <div class="panel-body">
+	{{ .Get "body" }}
+      </div>
     {{ end }}
-  </div>
+  {{ else }}
+    <div class="panel-body">
+      {{ .Get 0 }}
+    </div>
+  {{ end }}
 </div>
